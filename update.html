@@ -1,0 +1,25 @@
+<div class="container">
+        <h2>CREATE NEW PROFILE</h2><br>
+        <label for="First Name"></label>
+            <input type="text" placeholder="First Name" class="inp1" name="fname"
+             ng-model="updData.fname">
+        </label>
+        <label for="Last Name">
+            <input type="text" placeholder="Last Name" class="inp1" name="lname"
+            ng-model="updData.lname">
+        </label><br>
+        <label for="Email">
+            <input type="email" placeholder="Email" class="inp" name="email"
+            ng-model="updData.email"> 
+        </label><br>
+        <label for="phone#">
+            <input type="tel" placeholder="Phone#" class="inp" name="phone"
+            ng-model="updData.phone">
+        </label><br>
+        <label for="Address">
+            <input type="text" placeholder="Address" class="inp" name="addr"
+            ng-model="updData.addr">
+        </label><br>
+       <a ui-sref="form.home"> <input type="submit" value="UPDATE" class="btn" ng-click="update(updData)">  </a> 
+       <a ui-sref="form.home"> <input type="button" value="HOME" class="btn"></a>
+    </div>

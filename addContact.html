@@ -1,0 +1,30 @@
+<html>
+<body ng-app="addContact" ng-controller="myCtrl"> 
+        <ng-view></ng-view>
+    <div class="container">
+        <h2>CREATE NEW PROFILE</h2><br>
+        <label for="First Name"></label>
+            <input type="text" placeholder="First Name" class="inp1" name="fname"
+             ng-model="formData.fname">
+        </label>
+        <label for="Last Name">
+            <input type="text" placeholder="Last Name" class="inp1" name="lname"
+            ng-model="formData.lname">
+        </label><br>
+        <label for="Email">
+            <input type="email" placeholder="Email" class="inp" name="email"
+            ng-model="formData.email"> 
+        </label><br>
+        <label for="phone#">
+            <input type="tel" placeholder="Phone#" class="inp" name="phone"
+            ng-model="formData.phone">
+        </label><br>
+        <label for="Address">
+            <input type="text" placeholder="Address" class="inp" name="addr"
+            ng-model="formData.addr">
+        </label><br>
+       <a ui-sref="form.home"> <input type="submit" value="submit" class="btn" ng-click="goToHome()">  </a> 
+       <a ui-sref="form.home"> <input type="button" value="HOME" class="btn"></a>
+    </div>
+</body>    
+</html>

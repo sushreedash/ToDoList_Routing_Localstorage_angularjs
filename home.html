@@ -1,0 +1,13 @@
+<html>
+ <body ng-app="myApp" ng-controller="ctrl"> 
+        <div class="homeContainer">
+            <h2>PROFILE LIST</h2>
+            <li ng-repeat="data in arr track by $index">
+                <a ui-sref="form.update" ng-click="upd($index)">{{data}}</a>
+                <button class="del" ng-click="remove($index)">DELETE</button>
+            </li>
+           <a ui-sref="form.addContact"><button class="new">NEW PROFILE</button></a>
+        </div>
+        
+ </body>   
+</html>
